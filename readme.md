@@ -24,9 +24,7 @@
 <img src="https://img.shields.io/badge/-Bootstrap-563D7C?style=flat-square&logo=bootstrap"/>
 <img src="https://img.shields.io/badge/-Heroku-430098?style=flat-square&logo=heroku"/>
 </p>
-<p align = "center">
- <img src="https://activity-graph.herokuapp.com/graph?username=wanghao221&theme=redical">
-</p>
+
 
 
 CSDN全栈优质创作者，公众号【中南小恒】，我是一个爱好计算机科学，求索于逻辑思维的同时不忘哲学和浪漫主义科学，乐于分享技术与快乐的博主。博文内容涉及Java，Python，HTML/CSS/JS及SEO，数据结构等。
