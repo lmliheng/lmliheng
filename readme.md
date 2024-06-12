@@ -27,7 +27,7 @@
 
 
 
-CSDN全栈优质创作者，公众号【中南小恒】，我是一个爱好计算机科学，求索于逻辑思维的同时不忘哲学和浪漫主义科学，乐于分享技术与快乐的博主。博文内容涉及Java，Python，HTML/CSS/JS及SEO，数据结构等。
+CSDN全栈优质创作者🥇，公众号【中南小恒】🧮，我是一个爱好计算机科学，求索于逻辑思维的同时不忘哲学和浪漫主义科学，乐于分享技术与快乐的博主。🚡博文内容涉及Java，Python，HTML/CSS/JS及SEO，数据结构等。
 
 <p align="center">
 <a href="http://home.yunduanjianzhan.cn/">个人网站</a> | <a href="https://blog.csdn.net/2302_81578551?spm=1011.2266.3001.5343">CSDN</a> 
