@@ -1,14 +1,4 @@
-[![My Skills](https://skillicons.dev/icons?i=c,cpp,cs,cmake,net,py,matlab,r,qt,powershell,arduino,raspberrypi,opencv,html,css,js,jquery,bootstrap,php,windows,linux,ubuntu,nginx,mysql,vim,md,git,github,twitter,unreal,unity,godot,autocad,vscode)](https://skillicons.dev)
 
-<p align="center">
-<!-- https://github.com/anuraghazra/github-readme-stats -->
-<img align="center" width="400" src="https://github-readme-stats.vercel.app/api?username=liveldy&theme=transparent&show_icons=true&hide_border=true&show=reviews&hide_title=true&hide=contribs" />
-<!-- https://github.com/DenverCoder1/github-readme-streak-stats -->
-<img align="center" width="400" src="https://streak-stats.demolab.com?user=liveldy&theme=transparent&date_format=%5BY.%5Dn.j&hide_border=true" />
-<br/>
-<!-- https://github.com/Ashutosh00710/github-readme-activity-graph -->
-<img width="800" src="https://github-readme-activity-graph.vercel.app/graph?username=liveldy&theme=github-compact&hide_border=true&area=true&custom_title=Contribution%20Graph" />
-</p>
 <h2 align="center">Reach me on <img src="https://media.giphy.com/media/mGcNjsfWAjY5AEZNw6/giphy.gif" width="50"></h2>
 <p align="center">
 <img src="https://img.shields.io/badge/-JavaScript-black?style=flat-square&logo=javascript"/>
@@ -20,6 +10,15 @@
 <img src="https://img.shields.io/badge/-Git-black?style=flat-square&logo=git"/>
 <img src="https://img.shields.io/badge/-GitHub-black?style=flat-square&logo=github"/>
 </p>
+
+![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=liheng&theme=ambient_gradient&show_icons=true)
+
+<p align="center">
+<!-- https://github.com/anuraghazra/github-readme-stats -->
+<img align="center" width="400" src="https://github-readme-stats.vercel.app/api?username=lmliheng&theme=transparent&show_icons=true&hide_border=true&show=reviews&hide_title=true&hide=contribs" />
+<!-- https://github.com/DenverCoder1/github-readme-streak-stats -->
+<img align="center" width="400" src="https://streak-stats.demolab.com?user=liveldy&theme=transparent&date_format=%5BY.%5Dn.j&hide_border=true" />
+
 <p align="center">
 <h2 align="center">Technology Stack <img src="https://media.giphy.com/media/WUlplcMpOCEmTGBtBW/giphy.gif" width="30"></h2>
 <p align="center">
