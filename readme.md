@@ -11,7 +11,7 @@
 <img src="https://img.shields.io/badge/-GitHub-black?style=flat-square&logo=github"/>
 </p>
 
-![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=liheng&theme=ambient_gradient&show_icons=true)
+
 
 <p align="center">
 <!-- https://github.com/anuraghazra/github-readme-stats -->
