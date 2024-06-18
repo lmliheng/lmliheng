@@ -57,7 +57,7 @@ CSDN全栈优质创作者🥇，公众号【中南小恒】🧮，我是一个�
     <!-- visitor -->
     <img src="https://komarev.com/ghpvc/?username=sun0225SUN&label=Views&color=orange&style=flat" alt="访问量统计" />&emsp;
     <!-- wakatime -->    
-    <a href="https://wakatime.com/@sun0225SUN"><img src="https://wakatime.com/badge/user/42d0678c-368b-448b-9a77-5d21c5b55352.svg" /></a>
+    
 
   </div>
 
