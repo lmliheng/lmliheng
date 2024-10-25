@@ -29,16 +29,14 @@
 <img src="https://img.shields.io/badge/-GitHub-black?style=flat-square&logo=github"/>
 </p>
 
-
-
-CSDN全栈优质创作者🥇，公众号【中南小恒】🧮，我是一个爱好计算机科学，求索于逻辑思维的同时不忘哲学和浪漫主义科学，乐于分享技术与快乐的博主。🚡博文内容涉及Java，Python，HTML/CSS/JS及SEO，数据结构等。
+求索于逻辑思维的同时不忘哲学和浪漫主义科学，乐于分享技术与快乐。🚡内容涉及Java，等。
 
 <p align="center">
-<a href="http://home.liheng.work/">个人网站</a> | <a href="https://blog.csdn.net/2302_81578551?spm=1011.2266.3001.5343">CSDN</a> 
+<a href="http://home.liheng.work/">个人</a> | <a href="https://blog.csdn.net/2302_81578551?spm=1011.2266.3001.5343">CSDN</a> 
 </p>
   <div>
     <a href="http://home.liheng.work/">
-      <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&width=435&lines=console.log(%22Hello%2C%20World%22);努力进步每一天，小恒加油版上线&center=true&size=27" />
+      <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&width=435&lines=console.log(%22Hello%2C%20World%22);努力进步每一天，阿恒加油版上线&center=true&size=27" />
     </a>
   </div>
 
@@ -52,17 +50,7 @@ CSDN全栈优质创作者🥇，公众号【中南小恒】🧮，我是一个�
   <div>&nbsp;</div>
 
   <!-- profile logo 个人资料徽标 -->
-  <div>
-    <a href="https://twitter.com"><img src="https://img.shields.io/badge/Twitter-推特-blue" /></a>&emsp;
-    <a href="https://www.youtube.com"><img src="https://img.shields.io/badge/YouTube-油管-c32136" /></a>&emsp;
-    <a href="http:///home.liheng.work"><img src="https://img.shields.io/badge/Website-博客-8c36db" /></a>&emsp;
-    <a href="http://gzh.liheng.work"><img src="https://img.shields.io/badge/WeChat-微信-07c160" /></a>&emsp;
-    <!-- visitor -->
-    <img src="https://komarev.com/ghpvc/?username=sun0225SUN&label=Views&color=orange&style=flat" alt="访问量统计" />&emsp;
-    <!-- wakatime -->    
-    
-
-  </div>
+ 
 
   <!-- Snake Code Contribution Map 贪吃蛇代码贡献图 -->
   <picture>
