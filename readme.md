@@ -53,6 +53,9 @@
 
   <!-- profile logo 个人资料徽标 -->
  
+  <!-- [![lmliheng's GitHub | Stats](https://stats.quira.sh/lmliheng/github?theme=dark)](https://quira.sh?utm_source=widgets&utm_campaign=lmliheng) -->
+
+[![lmliheng's GitHub | Languages Over Time](https://stats.quira.sh/lmliheng/languages-over-time?theme=dark)](https://quira.sh?utm_source=widgets&utm_campaign=lmliheng)
 
   <!-- Snake Code Contribution Map 贪吃蛇代码贡献图 -->
   <picture>
@@ -60,6 +63,7 @@
     <source media="(prefers-color-scheme: light)" srcset="https://cdn.jsdelivr.net/gh/sun0225SUN/sun0225SUN/profile-snake-contrib/github-contribution-grid-snake.svg" />
     <img alt="github-snake" src="https://cdn.jsdelivr.net/gh/sun0225SUN/sun0225SUN/profile-snake-contrib/github-contribution-grid-snake-dark.svg" />
   </picture>
+
 
 </div>
 
