@@ -28,9 +28,7 @@
 <img src="https://img.shields.io/badge/-Redis-black?style=flat-square&logo=redis"/>
 <img src="https://img.shields.io/badge/-GitHub-black?style=flat-square&logo=github"/>
 </p>
-<p align="center">
-求索于逻辑思维的同时不忘哲学和浪漫主义科学，乐于分享技术与快乐
-</p>
+
 
 <p align="center">
 <a href="http://home.liheng.work/">single</a> | <a href="https://github.com/lmliheng">GitHub</a> ｜ <a href="https://gitee.com/liheng1111">Gitee</a> ｜ <a href="">Leetcode</a> |<a href="https://www.yuque.com/liheng-mcyf8">yuque</a>
