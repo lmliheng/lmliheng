@@ -1,23 +1,24 @@
-<img align='right' src='https://user-images.githubusercontent.com/5713670/87202985-820dcb80-c2b6-11ea-9f56-7ec461c497c3.gif' width='200'>
-<h2 align="center">Reach me on <img src="https://media.giphy.com/media/mGcNjsfWAjY5AEZNw6/giphy.gif" width="50"></h2>
-<p align="center">
-
-</p>
+<h1><img src="https://emojis.slackmojis.com/emojis/images/1531849430/4246/blob-sunglasses.gif?1531849430" width="30"/> Hey! Nice to see you.</h1>
 
 
+<h3>I have done by Github ✌️</h3>
 
-<p align="center">
+<img align="" height="137px" src="https://github-readme-stats.vercel.app/api?username=liyupi&hide_title=true&hide_border=true&show_icons=true&include_all_commits=true&line_height=21&bg_color=0,EC6C6C,FFD479,FFFC79,73FA79&theme=graywhite&locale=cn" /><img align="" height="137px" src="https://github-readme-stats.vercel.app/api/top-langs/?username=liyupi&hide_title=true&hide_border=true&layout=compact&bg_color=0,73FA79,73FDFF,D783FF&theme=graywhite&locale=cn" />
+
+<h3>Things I coding now 🥸</h3>
+
+<a href="https://github.com/anuraghazra/github-readme-stats">
+<img align="" height="120px" src="https://github-readme-stats.vercel.app/api/pin?username=lmliheng&repo=onlylink&hide_title=true&hide_border=true&show_icons=true&include_all_commits=true&line_height=21&bg_color=0,EC6C6C,FFD479,FFFC79,73FA79&theme=graywhite&locale=cn" />
+</a>
+
+<a href="https://github.com/anuraghazra/github-readme-stats">
+<img align="" height="120px" src="https://github-readme-stats.vercel.app/api/pin?username=lmliheng&repo=Gaokao_Math_Exam&hide_title=true&hide_border=true&show_icons=true&include_all_commits=true&line_height=21&bg_color=0,EC6C6C,FFD479,FFFC79,73FA79&theme=graywhite&locale=cn" />
+</a>
 
 
-<!-- https://github.com/anuraghazra/github-readme-stats -->
-  
-<img align="center" width="400" src="https://github-readme-stats-one-liard-37.vercel.app/api?username=lmliheng&theme=neon&show_icons=true&hide_border=true&show=reviews&hide_title=true" />
-<!-- https://github.com/DenverCoder1/github-readme-streak-stats -->
-<img align="center" width="400" src="https://streak-stats.demolab.com?user=lmliheng&theme=neon&date_format=%5BY.%5Dn.j&hide_border=true" />
 
-<p align="center">
-<h2 align="center">Technology Stack <img src="https://media.giphy.com/media/WUlplcMpOCEmTGBtBW/giphy.gif" width="30"></h2>
-<p align="center">
+<h3>My Technology Stack <img src="https://media.giphy.com/media/WUlplcMpOCEmTGBtBW/giphy.gif" width="30"></h3>
+<p>
 <img src="https://img.shields.io/badge/C-00599C?style=flat-square&logo=c&logoColor=white"/>
 <img src="https://img.shields.io/badge/-java-E34A86?style=flat-square&logo=java"/>
 <img src="https://img.shields.io/badge/-C++-00599C?style=flat-square&logo=c"/>
@@ -29,10 +30,8 @@
 <img src="https://img.shields.io/badge/-GitHub-black?style=flat-square&logo=github"/>
 </p>
 
-
-<p align="center">
 <a href="http://home.liheng.work/">single</a> | <a href="https://github.com/lmliheng">GitHub</a> ｜ <a href="https://gitee.com/liheng1111">Gitee</a> ｜ <a href="">Leetcode</a> | <a href="https://www.yuque.com/liheng-mcyf8">yuque</a> | <a href="https://github-insights-pro.toolsnav.top/user/lmliheng/">github-insights-pro</a> | <a href="https://orcid.org/0009-0006-4685-5380">ORCID</a> 
-</p>
+
 
   <div>
     <a href="http://home.liheng.work/">
