@@ -1,28 +1,6 @@
 <h1><img src="https://emojis.slackmojis.com/emojis/images/1531849430/4246/blob-sunglasses.gif?1531849430" width="30"/> Hey! Nice to see you.</h1>
 
 
-<h3>I have done by Github ✌️</h3>
-
-<img align="" height="137px" src="https://github-readme-stats.vercel.app/api?username=lmliheng&hide_title=true&hide_border=true&show_icons=true&include_all_commits=true&line_height=21&bg_color=0,EC6C6C,FFD479,FFFC79,73FA79&theme=graywhite&locale=cn" /><img align="" height="137px" src="https://github-readme-stats.vercel.app/api/top-langs/?username=lmliheng&hide_title=true&hide_border=true&layout=compact&bg_color=0,73FA79,73FDFF,D783FF&theme=graywhite&locale=cn" />
-
-<h3>Things I coding now 🥸</h3>
-
-<a href="https://github.com/lmliheng/onlylink">
-<img align="" height="120px" src="https://github-readme-stats.vercel.app/api/pin?username=lmliheng&repo=onlylink&hide_title=true&hide_border=true&show_icons=true&include_all_commits=true&line_height=21&bg_color=0,EC6C6C,FFD479,FFFC79,73FA79&theme=graywhite&locale=cn" />
-</a>
-
-<a href="https://github.com/lmliheng/Gaokao_Math_Exam">
-<img align="" height="120px" src="https://github-readme-stats.vercel.app/api/pin?username=lmliheng&repo=Gaokao_Math_Exam&hide_title=true&hide_border=true&show_icons=true&include_all_commits=true&line_height=21&bg_color=0,EC6C6C,FFD479,FFFC79,73FA79&theme=graywhite&locale=cn" />
-</a>
-
-<a href="https://github.com/lmliheng/algorithm">
-<img align="" height="120px" src="https://github-readme-stats.vercel.app/api/pin?username=lmliheng&repo=algorithm&hide_title=true&hide_border=true&show_icons=true&include_all_commits=true&line_height=21&bg_color=0,EC6C6C,FFD479,FFFC79,73FA79&theme=graywhite&locale=cn" />
-</a>
-
-<a href="https://github.com/lmliheng/spring">
-<img align="" height="120px" src="https://github-readme-stats.vercel.app/api/pin?username=lmliheng&repo=spring&hide_title=true&hide_border=true&show_icons=true&include_all_commits=true&line_height=21&bg_color=0,EC6C6C,FFD479,FFFC79,73FA79&theme=graywhite&locale=cn" />
-</a>
-
 
 <h3>My Technology Stack <img src="https://media.giphy.com/media/WUlplcMpOCEmTGBtBW/giphy.gif" width="30"></h3>
 <p>
@@ -40,11 +18,6 @@
 <a href="http://home.liheng.work/">single</a> | <a href="https://github.com/lmliheng">GitHub</a> ｜ <a href="https://gitee.com/liheng1111">Gitee</a> ｜ <a href="">Leetcode</a> | <a href="https://www.yuque.com/liheng-mcyf8">yuque</a> | <a href="https://github-insights-pro.toolsnav.top/user/lmliheng/">github-insights-pro</a> | <a href="https://orcid.org/0009-0006-4685-5380">ORCID</a> 
 
 
-  <div>
-    <a href="http://home.liheng.work/">
-      <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&width=435&lines=console.log(%22Hello%2C%20World%22);努力进步每一天，阿恒加油版上线&center=true&size=27" />
-    </a>
-  </div>
 
   <!-- knock code pictures 敲代码的图片 -->
   <picture>
@@ -59,8 +32,6 @@
  
   <!-- [![lmliheng's GitHub | Stats](https://stats.quira.sh/lmliheng/github?theme=dark)](https://quira.sh?utm_source=widgets&utm_campaign=lmliheng) -->
 
-[![lmliheng's GitHub | Languages Over Time](https://stats.quira.sh/lmliheng/languages-over-time?theme=dark)](https://quira.sh?utm_source=widgets&utm_campaign=lmliheng)
-
   <!-- Snake Code Contribution Map 贪吃蛇代码贡献图 -->
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/sun0225SUN/sun0225SUN/profile-snake-contrib/github-contribution-grid-snake-dark.svg" />
@@ -70,6 +41,7 @@
 
 
 </div>
+
 
 
 
