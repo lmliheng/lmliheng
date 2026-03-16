@@ -38,8 +38,8 @@
 <img align="center" width="400" src="https://streak-stats.demolab.com?user=lmliheng&theme=transparent&date_format=%5BY.%5Dn.j&hide_border=true" />
 <br/>
 <!-- https://github.com/Ashutosh00710/github-readme-activity-graph -->
-<img width="800" src="https://github-readme-activity-graph.vercel.app/graph?username=lmliheng&theme=github-compact&hide_border=true&area=true&custom_title=Contribution%20Graph" />
-</p>
+长期提交的仓库
+[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=lmiheng&repo=github-readme-stats&show_owner=true&description_lines_count=1)](https://github.com/lmliheng/code)
 
 </div>
 
