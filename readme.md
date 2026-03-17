@@ -40,6 +40,7 @@
 
 [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=lmliheng&repo=code&show_owner=true&description_lines_count=1)](https://github.com/lmliheng/code)&emsp;[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=lmliheng&repo=DoQ&show_owner=true&description_lines_count=1)](https://github.com/lmliheng/DoQ)
 
+[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=lmliheng&repo=law-ai-app&show_owner=true&description_lines_count=1)](https://github.com/lmliheng/law-ai-app)
 </div>
 
 
