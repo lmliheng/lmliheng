@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>liheng-家教简历</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', 'Microsoft YaHei', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+
+        .resume-container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+            animation: fadeInUp 0.8s ease-out;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* 头部区域 */
+        .header {
+            background: linear-gradient(135deg, #1a237e 0%, #3949ab 100%);
+            color: white;
+            padding: 40px;
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .header::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -50%;
+            width: 100%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
+            animation: rotate 20s linear infinite;
+        }
+
+        @keyframes rotate {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        .avatar-container {
+            position: relative;
+            z-index: 1;
+        }
+
+        .avatar {
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
+            border: 5px solid rgba(255, 255, 255, 0.3);
+            object-fit: cover;
+            
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 48px;
+            color: #1a237e;
+            transition: transform 0.3s ease;
+        }
+
+        .avatar:hover {
+            transform: scale(1.05);
+        }
+
+        .basic-info {
+            position: relative;
+            z-index: 1;
+        }
+
+        .name {
+            font-size: 42px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        .title {
+            font-size: 18px;
+            opacity: 0.9;
+            margin-bottom: 15px;
+            padding: 5px 15px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 20px;
+            display: inline-block;
+        }
+
+        .contact-list {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 15px;
+            opacity: 0.95;
+        }
+
+        .contact-item i {
+            width: 20px;
+            text-align: center;
+        }
+
+        /* 主体内容 */
+        .main-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+
+        .section {
+            padding: 30px;
+            border-right: 1px solid #eee;
+        }
+
+        .section:last-child {
+            border-right: none;
+        }
+
+        .section-title {
+            font-size: 22px;
+            color: #1a237e;
+            margin-bottom: 25px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #667eea;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .section-title i {
+            color: #667eea;
+        }
+
+        /* 教育背景 */
+        .education-item {
+            background: #f8f9ff;
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-left: 4px solid #3949ab;
+            transition: all 0.3s ease;
+        }
+
+        .education-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 5px 20px rgba(102, 126, 234, 0.2);
+        }
+
+        .school-name {
+            font-size: 18px;
+            font-weight: bold;
+            color: #1a237e;
+            margin-bottom: 5px;
+        }
+
+        .major {
+            color: #666;
+            font-size: 14px;
+            margin-bottom: 8px;
+        }
+
+        .degree {
+            display: inline-block;
+            background: #e8eaf6;
+            color: #3949ab;
+            padding: 3px 12px;
+            border-radius: 15px;
+            font-size: 13px;
+        }
+
+        /* 课程列表 */
+        .course-category {
+            margin-bottom: 20px;
+        }
+
+        .category-title {
+            font-size: 16px;
+            color: #333;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .category-title .dot {
+            width: 8px;
+            height: 8px;
+            background: #667eea;
+            border-radius: 50%;
+        }
+
+        .course-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .course-tag {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 13px;
+            transition: all 0.3s ease;
+            cursor: default;
+        }
+
+        .course-tag:hover {
+            transform: scale(1.1);
+            box-shadow: 0 3px 10px rgba(102, 126, 234, 0.4);
+        }
+
+        .course-tag.secondary {
+            background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);
+        }
+
+        /* 技能条 */
+        .skill-item {
+            margin-bottom: 15px;
+        }
+
+        .skill-header {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 5px;
+            font-size: 14px;
+        }
+
+        .skill-bar {
+            height: 8px;
+            background: #e0e0e0;
+            border-radius: 4px;
+            overflow: hidden;
+        }
+
+        .skill-progress {
+            height: 100%;
+            background: linear-gradient(90deg, #667eea, #764ba2);
+            border-radius: 4px;
+            transition: width 1s ease-out;
+        }
+
+        /* 教学优势 & 经验 */
+        .advantage-list {
+            list-style: none;
+        }
+
+        .advantage-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            margin-bottom: 15px;
+            padding: 12px;
+            background: #f8f9ff;
+            border-radius: 10px;
+            transition: all 0.3s ease;
+        }
+
+        .advantage-item:hover {
+            background: #e8eaf6;
+            transform: translateX(5px);
+        }
+
+        .advantage-icon {
+            width: 36px;
+            height: 36px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            flex-shrink: 0;
+        }
+
+        .advantage-text {
+            font-size: 14px;
+            color: #444;
+            line-height: 1.5;
+        }
+
+        /* 页脚 */
+        .footer {
+            background: #1a237e;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .footer p {
+            font-size: 14px;
+            opacity: 0.9;
+        }
+
+        /* 响应式设计 */
+        @media (max-width: 768px) {
+            .header {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .contact-list {
+                justify-content: center;
+            }
+
+            .main-content {
+                grid-template-columns: 1fr;
+            }
+
+            .section {
+                border-right: none;
+                border-bottom: 1px solid #eee;
+            }
+
+            .name {
+                font-size: 32px;
+            }
+        }
+
+        /* 打印样式 */
+        @media print {
+            body {
+                background: white;
+                padding: 0;
+            }
+
+            .resume-container {
+                box-shadow: none;
+            }
+
+            .header {
+                background: #1a237e !important;
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="resume-container">
+        <!-- 头部信息 -->
+        <header class="header">
+                        <div class="avatar-container">
+                <div class="avatar">
+                    <img src="photo.jpg" alt="李恒" class="profile-photo" style="width: 120px;border-radius: 50%;">
+                    
+                </div>
+            </div>
+         
+            <div class="basic-info">
+                <h1 class="name">李恒</h1>
+                <span class="title"><i class="fas fa-chalkboard-teacher"></i> 大学生家教</span>
+                <ul class="contact-list">
+                    <li class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>13551458597</span>
+                    </li>
+                    <li class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>liheng2137@126.com</span>
+                    </li>
+                    <li class="contact-item">
+                        <i class="fab fa-weixin"></i>
+                        <span>b13551458597</span>
+                    </li>
+                    <li class="contact-item">
+                        <i class="fab fa-github"></i>
+                        <span>GitHub: lmliheng</span>
+                    </li>
+                    <li class="contact-item">
+                        <i class="fas fa-graduation-cap"></i>
+                        <span>中南大学本科在读</span>
+                    </li>
+                    <li class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>地球物理学专业</span>
+                    </li>
+                </ul>
+            </div>
+        </header>
+
+        <!-- 主体内容 -->
+        <div class="main-content">
+            <!-- 左侧栏 -->
+            <div class="left-column">
+                <!-- 教育背景 -->
+                <section class="section">
+                    <h2 class="section-title">
+                        <i class="fas fa-university"></i>
+                        教育背景
+                    </h2>
+                    
+                    <div class="education-item">
+                        <div class="school-name">中南大学</div>
+                        <div class="major">地球科学与信息物理学院 · 地球物理学专业</div>
+                        <span class="degree">本科学士学位</span>
+                    </div>
+
+                    <div class="education-item">
+                        <div class="school-name">辅修课程</div>
+                        <div class="major">计算机科学与技术方向</div>
+                        <span class="degree">Web / 移动端 / 桌面应用开发</span>
+                    </div>
+                </section>
+
+                <!-- 专业技能 -->
+                <section class="section">
+                    <h2 class="section-title">
+                        <i class="fas fa-code"></i>
+                        专业技能
+                    </h2>
+                    
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span>数学基础</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 95%;"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span>物理原理</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 92%;"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span>英语</span>
+                            <span>70%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 85%;"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span>电子信息</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 88%;"></div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <!-- 右侧栏 -->
+            <div class="right-column">
+                <!-- 主修课程 -->
+                <section class="section">
+                    <h2 class="section-title">
+                        <i class="fas fa-book-open"></i>
+                        主修课程
+                    </h2>
+
+                    <div class="course-category">
+                        <div class="category-title">
+                            <span class="dot"></span>
+                            地球物理学核心
+                        </div>
+                        <div class="course-tags">
+                            <span class="course-tag">重力学</span>
+                            <span class="course-tag">电磁学</span>
+                            <span class="course-tag">地球物理仪器</span>
+                        </div>
+                    </div>
+
+                    <div class="course-category">
+                        <div class="category-title">
+                            <span class="dot"></span>
+                            数学基础
+                        </div>
+                        <div class="course-tags">
+                            <span class="course-tag">高等数学</span>
+                            <span class="course-tag">线性代数</span>
+                            <span class="course-tag">复变函数</span>
+                        </div>
+                    </div>
+
+                    <div class="course-category">
+                        <div class="category-title">
+                            <span class="dot"></span>
+                            电子信息
+                        </div>
+                        <div class="course-tags">
+                            <span class="course-tag secondary">Web</span>
+                            <span class="course-tag secondary">移动端</span>
+                            <span class="course-tag secondary">桌面应用</span>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 教学优势 & 家教经验 -->
+                <section class="section">
+                    <h2 class="section-title">
+                        <i class="fas fa-star"></i>
+                        教学优势 & 家教经验
+                    </h2>
+
+                    <ul class="advantage-list">
+                        <li class="advantage-item">
+                            <div class="advantage-icon">
+                                <i class="fas fa-brain"></i>
+                            </div>
+                            <div class="advantage-text">
+                                扎实的数学物理基础，能将抽象概念形象化讲解，帮助学生真正理解原理
+                            </div>
+                        </li>
+                 
+                        <li class="advantage-item">
+                            <div class="advantage-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="advantage-text">
+                                在校大学生，熟悉当前教育体系，能与学生高效沟通，因材施教
+                            </div>
+                        </li>
+                        <li class="advantage-item">
+                            <div class="advantage-icon">
+                                <i class="fas fa-heart"></i>
+                            </div>
+                            <div class="advantage-text">
+                                耐心细致，责任心强，注重学习方法指导，帮助学生建立自信
+                            </div>
+                        </li>
+                        <li class="advantage-item">
+                            <div class="advantage-icon">
+                                <i class="fas fa-user-graduate"></i>
+                            </div>
+                            <div class="advantage-text">
+                                <strong>家教经验：</strong>曾辅导一名高三学生数学长达三个月，帮助其数学成绩稳步提升，并在高考模拟考中取得显著进步，积累了针对高考数学的系统复习与题型归纳经验。
+                            </div>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+
+        <!-- 页脚 -->
+        <footer class="footer">
+            <p><i class="fas fa-envelope"></i> 期待与您联系，助力学业进步！</p>
+            <p style="margin-top: 8px; opacity: 0.7;">中南大学 · 地球物理学 · 李恒 | GitHub: <a href="https://github.com/lmliheng" target="_blank" style="color: #a5d6ff;">https://github.com/lmliheng</a></p>
+        </footer>
+    </div>
+
+    <script>
+        // 页面加载动画
+        document.addEventListener('DOMContentLoaded', function() {
+            // 技能条动画
+            const skillBars = document.querySelectorAll('.skill-progress');
+            skillBars.forEach(bar => {
+                const width = bar.style.width;
+                bar.style.width = '0';
+                setTimeout(() => {
+                    bar.style.width = width;
+                }, 300);
+            });
+
+            // 头像点击更换表情
+            const avatar = document.querySelector('.avatar');
+            const icons = ['fa-user', 'fa-user-graduate', 'fa-user-tie', 'fa-user-ninja'];
+            let currentIcon = 0;
+
+            avatar.addEventListener('click', function() {
+                currentIcon = (currentIcon + 1) % icons.length;
+                this.innerHTML = `<i class="fas ${icons[currentIcon]}"></i>`;
+            });
+
+            // 课程标签悬停效果增强
+            const courseTags = document.querySelectorAll('.course-tag');
+            courseTags.forEach(tag => {
+                tag.addEventListener('mouseenter', function() {
+                    this.style.transform = 'scale(1.15) rotate(-2deg)';
+                });
+                tag.addEventListener('mouseleave', function() {
+                    this.style.transform = 'scale(1) rotate(0deg)';
+                });
+            });
+
+            // 联系方式复制功能
+            const contactItems = document.querySelectorAll('.contact-item');
+            contactItems.forEach(item => {
+                item.style.cursor = 'pointer';
+                item.title = '点击复制';
+                
+                item.addEventListener('click', function(e) {
+                    const text = this.querySelector('span')?.textContent || '';
+                    if (!text) return;
+                    navigator.clipboard.writeText(text).then(() => {
+                        const originalBg = this.style.background;
+                        this.style.background = '#4caf50';
+                        this.style.color = 'white';
+                        
+                        setTimeout(() => {
+                            this.style.background = originalBg;
+                            this.style.color = '';
+                        }, 500);
+                    }).catch(err => {
+                        console.log('复制失败:', err);
+                    });
+                });
+            });
+
+            console.log('✅ 简历加载完成！');
+            console.log('💡 提示：点击头像可以切换表情，点击联系方式可以复制');
+        });
+    </script>
+</body>
+</html>
