@@ -38,11 +38,14 @@
 <!-- <img align="center" width="400" src="https://github-readme-stats.vercel.app/api?username=lmliheng&theme=transparent&show_icons=true&hide_border=true&show=reviews&hide_title=true&hide=contribs" /> -->
 <!-- https://github.com/DenverCoder1/github-readme-streak-stats -->
 <!-- https://github.com/Ashutosh00710/github-readme-activity-graph -->
+<!--
 长期提交的仓库:
 
 [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=lmliheng&repo=code&show_owner=true&description_lines_count=1)](https://github.com/lmliheng/code)&emsp;[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=lmliheng&repo=DoQ&show_owner=true&description_lines_count=1)](https://github.com/lmliheng/DoQ)
 
 [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=lmliheng&repo=law-ai-app&show_owner=true&description_lines_count=1)](https://github.com/lmliheng/law-ai-app)&emsp;[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=lmliheng&repo=code&show_owner=true&description_lines_count=1)](https://github.com/lmliheng/learn)
+ -->
+
 
 </div>
 
