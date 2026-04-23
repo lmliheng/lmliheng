@@ -4,20 +4,18 @@
 
 
 
-<h3>I do work by <img src="https://media.giphy.com/media/WUlplcMpOCEmTGBtBW/giphy.gif" width="30"></h3>
+<h3>I am a Web Work <img src="https://media.giphy.com/media/WUlplcMpOCEmTGBtBW/giphy.gif" width="30"></h3>
 <p>
 <img src="https://img.shields.io/badge/C-00599C?style=flat-square&logo=c&logoColor=white"/>
 <img src="https://img.shields.io/badge/-java-E34A86?style=flat-square&logo=java"/>
-<img src="https://img.shields.io/badge/-C++-00599C?style=flat-square&logo=c"/>
-<img src="https://img.shields.io/badge/-JavaScript-black?style=flat-square&logo=javascript"/>
+<img src="https://img.shields.io/badge/-JavaScript-white?style=flat-square&logo=javascript"/>
+<img src="https://img.shields.io/badge/-TypeScript-white?style=flat-square&logo=typescript"/>
 <img src="https://img.shields.io/badge/-Nodejs-blue?style=flat-square&logo=Node.js"/>
-<img src="https://img.shields.io/badge/-Expressjs-red?style=flat-square&logo=Express.js"/>
 <img src="https://img.shields.io/badge/-React-yellow?style=flat-square&logo=react"/>
-<img src="https://img.shields.io/badge/-Redis-black?style=flat-square&logo=redis"/>
-<img src="https://img.shields.io/badge/-GitHub-black?style=flat-square&logo=github"/>
+<img src="https://img.shields.io/badge/-Mysql-white?style=flat-square&logo=mysql"/>
 </p>
 
-<a href="http://home.liheng.work/">single</a> | <a href="https://github.com/lmliheng">GitHub</a> ｜ <a href="https://gitee.com/liheng1111">Gitee</a> ｜ <a href="">Leetcode</a> | <a href="https://www.yuque.com/liheng-mcyf8">yuque</a> | <a href="https://github-insights-pro.toolsnav.top/user/lmliheng/">github-insights-pro</a> | <a href="https://orcid.org/0009-0006-4685-5380">ORCID</a> 
+<a href="http://home.liheng.work/">single Web</a> | <a href="https://github.com/lmliheng">GitHub</a> ｜ <a href="https://gitee.com/liheng1111">Gitee</a> ｜ <a href="">Leetcode</a> | <a href="https://www.yuque.com/liheng-mcyf8">yuque</a> | <a href="https://github-insights-pro.toolsnav.top/user/lmliheng/">github-insights-pro</a> | <a href="https://orcid.org/0009-0006-4685-5380">ORCID</a> 
 
 
 
