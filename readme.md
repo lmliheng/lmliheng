@@ -6,18 +6,22 @@
 
 <h3>I am a Web Work <img src="https://media.giphy.com/media/WUlplcMpOCEmTGBtBW/giphy.gif" width="30"></h3>
 <p>
-<img src="https://img.shields.io/badge/C-00599C?style=flat-square&logo=c&logoColor=white"/>
+<img src="https://img.shields.io/badge/Vue.js-35495E?style=for-the-badge&logo=vue.js&logoColor=4FC08D"/>
+<img src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white"/>
+<img src="https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white"/>
+    
+<!-- <img src="https://img.shields.io/badge/C-00599C?style=flat-square&logo=c&logoColor=white"/>
 <img src="https://img.shields.io/badge/-java-E34A86?style=flat-square&logo=java"/>
 <img src="https://img.shields.io/badge/-JavaScript-white?style=flat-square&logo=javascript"/>
-<img src="https://img.shields.io/badge/-TypeScript-white?style=flat-square&logo=typescript"/>
-<img src="https://img.shields.io/badge/-Nodejs-blue?style=flat-square&logo=Node.js"/>
-<img src="https://img.shields.io/badge/-React-yellow?style=flat-square&logo=react"/>
-<img src="https://img.shields.io/badge/-Mysql-white?style=flat-square&logo=mysql"/>
+https://www.npmjs.com/~lmliheng
+<img src="https://img.shields.io/badge/-Nodejs-blue?style=flat-square&logo=Node.js"/> -->
+
 </p>
 
-<a href="http://home.liheng.work/">single Web</a> | <a href="https://github.com/lmliheng">GitHub</a> ｜ <a href="https://gitee.com/liheng1111">Gitee</a> ｜ <a href="">Leetcode</a> | <a href="https://www.yuque.com/liheng-mcyf8">yuque</a> | <a href="https://github-insights-pro.toolsnav.top/user/lmliheng/">github-insights-pro</a> | <a href="https://orcid.org/0009-0006-4685-5380">ORCID</a> 
 
-
+<h5>在哪可以获取我更多信息：</h5>
+<a href="https://www.npmjs.com/~lmliheng"><img src="https://img.shields.io/badge/npm-CB3837?style=for-the-badge&logo=npm&logoColor=white"/></a> 
+<a href="https://leetcode.cn/u/festive-keplerug8/"><img src="https://img.shields.io/badge/-LeetCode-FFA116?style=for-the-badge&logo=LeetCode&logoColor=black"/></a> 
 
   <!-- knock code pictures 敲代码的图片 -->
   <picture>
