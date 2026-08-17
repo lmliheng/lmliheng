@@ -53,8 +53,25 @@ https://www.npmjs.com/~lmliheng
 </div>
 
 
+## 📌 最近的工作
 
+| 时间 | 工作内容 | 仓库 |
+|---|---|---|
+| 2026-08-17 | 更新 README 与 changelog；实现 ReAct Agent / ReAct Loop | [AgentCode](https://github.com/lmliheng/AgentCode) |
+| 2026-08-17 | 算法练习：最长重复子数组、JS 多维数组创建、前缀和 | [algorithm](https://github.com/lmliheng/algorithm) |
+| 2026-08-15 | git_ai 工具链：npm 发布、模型更新、Python 学习 | [algorithm](https://github.com/lmliheng/algorithm) / [jailbreak](https://github.com/lmliheng/jailbreak) |
+| 2026-08-14 | changelog 脚本、Webpack 学习 | [algorithm](https://github.com/lmliheng/algorithm) |
 
+## 🏆 主要仓库
 
-
-
+| 仓库 | 简介 | 语言 | ⭐ |
+|---|---|---|---|
+| [FastWebServer](https://github.com/lmliheng/FastWebServer) | 转发静态资源的 Web 服务器 | C | 69 |
+| [CmdUtils](https://github.com/lmliheng/CmdUtils) | Linux 命令行查询脚手架 | C | 55 |
+| [law-ai-app](https://github.com/lmliheng/law-ai-app) | Law-AI 应用 | Vue | 3 |
+| [algorithm](https://github.com/lmliheng/algorithm) | 力扣算法题 + 多语言代码，每日提交 | JavaScript | 2 |
+| [coding-words](https://github.com/lmliheng/coding-words) | 开发者专业术语大全 | JavaScript | 2 |
+| [FastWebProject](https://github.com/lmliheng/FastWebProject) | Vue3 编写的 Web 应用集 | Vue | 2 |
+| [JScreator](https://github.com/lmliheng/JScreator) | 前台应用 + Node 后端 + 控制面板 | Vue | 1 |
+| [vue-mini](https://github.com/lmliheng/vue-mini) | 从 0 构建 Vue，源码学习设计与实现 | HTML | 1 |
+| [AgentCode](https://github.com/lmliheng/AgentCode) | Agent 能力增强：RAG 存储检索、MCP 创建与应用 | JavaScript | 0 |
