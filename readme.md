@@ -4,8 +4,9 @@
 
 
 
-<h3>I am a Web Worker <img src="https://media.giphy.com/media/WUlplcMpOCEmTGBtBW/giphy.gif" width="30"></h3>
+<h3>I am a Agent Worker</h3>
 <p>
+
 <img src="https://img.shields.io/badge/Vue.js-35495E?style=for-the-badge&logo=vue.js&logoColor=4FC08D"/>
 <img src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white"/>
 <img src="https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white"/>
@@ -20,7 +21,7 @@ https://www.npmjs.com/~lmliheng
 </p>
 
 
-<h5>在哪可以获取我更多信息：</h5>
+<h5>在哪可以获取我更多信息，邮箱：0110230306@csu.edu.cn</h5>
 <a href="https://www.npmjs.com/~lmliheng"><img src="https://img.shields.io/badge/npm-CB3837?style=for-the-badge&logo=npm&logoColor=white"/></a> 
 <a href="https://leetcode.cn/u/festive-keplerug8/"><img src="https://img.shields.io/badge/-LeetCode-FFA116?style=for-the-badge&logo=LeetCode&logoColor=black"/></a> 
 <a href="https://paypal.me/lmliheng"><img src="https://img.shields.io/badge/paypal-8A2BE2"/></a>
