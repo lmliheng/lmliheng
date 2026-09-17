@@ -21,7 +21,7 @@ https://www.npmjs.com/~lmliheng
 </p>
 
 
-<h5>在哪可以获取我更多信息，邮箱：0110230306@csu.edu.cn</h5>
+<h5>在哪可以获取我更多信息，邮箱0110230306@csu.edu.cn</h5>
 <a href="https://www.npmjs.com/~lmliheng"><img src="https://img.shields.io/badge/npm-CB3837?style=for-the-badge&logo=npm&logoColor=white"/></a> 
 <a href="https://leetcode.cn/u/festive-keplerug8/"><img src="https://img.shields.io/badge/-LeetCode-FFA116?style=for-the-badge&logo=LeetCode&logoColor=black"/></a> 
 <a href="https://paypal.me/lmliheng"><img src="https://img.shields.io/badge/paypal-8A2BE2"/></a>
