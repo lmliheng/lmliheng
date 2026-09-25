@@ -4,7 +4,7 @@
 
 
 
-<h3>I am a Agent Worker</h3>
+<h3>Digital Nomad</h3>
 <p>
 
 <img src="https://img.shields.io/badge/Go-00ADD8?style=for-the-badge&logo=go&logoColor=white"/>
