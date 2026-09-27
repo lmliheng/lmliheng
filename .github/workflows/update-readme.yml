@@ -1,0 +1,41 @@
+name: 更新主页 README
+
+on:
+  schedule:
+    # 每天 22:00 UTC = 次日 06:00（北京时间）
+    - cron: "0 22 * * *"
+  workflow_dispatch: # 也可以在 Actions 页面手动点一次
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-readme
+  cancel-in-progress: true
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: 生成 readme.md
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python3 scripts/update_readme.py
+
+      - name: 有变化就提交
+        run: |
+          if git diff --quiet; then
+            echo "内容没有变化，跳过提交"
+            exit 0
+          fi
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add readme.md
+          git commit -m "chore: 自动更新主页 readme · $(TZ=Asia/Shanghai date '+%Y-%m-%d %H:%M')"
+          git push
