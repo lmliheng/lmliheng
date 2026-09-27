@@ -1,55 +1,25 @@
-<!-- <h1><img src="https://emojis.slackmojis.com/emojis/images/1531849430/4246/blob-sunglasses.gif?1531849430" width="30"/> Hey! Nice to see you.</h1>-->
-    
-<!-- <img width="544" height="214" alt="logo" src="https://github.com/user-attachments/assets/439d7b54-7856-4937-817b-17b136331af2" /> -->
+<!-- 该文件由 scripts/update_readme.py 自动生成，请勿直接编辑；改版请改脚本。 -->
 
+<div align="center">
 
+<img src="assets/banner.svg" alt="liheng" width="100%" />
 
-<h3>Digital Nomad</h3>
-<p>
-
-<img src="https://img.shields.io/badge/Go-00ADD8?style=for-the-badge&logo=go&logoColor=white"/>
-<img src="https://img.shields.io/badge/LangChain-1C3C3C?style=for-the-badge&logo=chainlink&logoColor=00ADD8"/>
-<img src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white"/>
-<img src="https://img.shields.io/badge/Vue.js-35495E?style=for-the-badge&logo=vue.js&logoColor=4FC08D"/>
-<img src="https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white"/>
-    
-<!-- <img src="https://img.shields.io/badge/C-00599C?style=flat-square&logo=c&logoColor=white"/>
-<img src="https://img.shields.io/badge/-java-E34A86?style=flat-square&logo=java"/>
-<img src="https://img.shields.io/badge/-JavaScript-white?style=flat-square&logo=javascript"/>
-https://www.npmjs.com/~lmliheng
-<img src="https://img.shields.io/badge/-Nodejs-blue?style=flat-square&logo=Node.js"/> -->
-
-</p>
-
-
-<h5>在哪可以获取我更多信息，邮箱0110230306@csu.edu.cn</h5>
-<a href="https://www.npmjs.com/~lmliheng"><img src="https://img.shields.io/badge/npm-CB3837?style=for-the-badge&logo=npm&logoColor=white"/></a> 
-<a href="https://leetcode.cn/u/festive-keplerug8/"><img src="https://img.shields.io/badge/-LeetCode-FFA116?style=for-the-badge&logo=LeetCode&logoColor=black"/></a> 
-<a href="https://paypal.me/lmliheng"><img src="https://img.shields.io/badge/paypal-8A2BE2"/></a>
-  <!-- knock code pictures 敲代码的图片 -->
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/sun0225SUN/sun0225SUN/assets/images/coding.gif" />
-    <source media="(prefers-color-scheme: light)" srcset="https://cdn.jsdelivr.net/gh/sun0225SUN/sun0225SUN/assets/images/developer.svg" height="225px" />
-  </picture>
-
-  <!-- for beauty 留个空行好看点 -->
-  
-  <!-- profile logo 个人资料徽标 -->
- 
-  <!-- [![lmliheng's GitHub | Stats](https://stats.quira.sh/lmliheng/github?theme=dark)](https://quira.sh?utm_source=widgets&utm_campaign=lmliheng) -->
-
-  <!-- Snake Code Contribution Map 贪吃蛇代码贡献图 -->
-<!-- https://github.com/anuraghazra/github-readme-stats -->
-<!-- <img align="center" width="400" src="https://github-readme-stats.vercel.app/api?username=lmliheng&theme=transparent&show_icons=true&hide_border=true&show=reviews&hide_title=true&hide=contribs" /> -->
-<!-- https://github.com/DenverCoder1/github-readme-streak-stats -->
-<!-- https://github.com/Ashutosh00710/github-readme-activity-graph -->
-<!--
-长期提交的仓库:
-
-[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=lmliheng&repo=code&show_owner=true&description_lines_count=1)](https://github.com/lmliheng/code)&emsp;[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=lmliheng&repo=DoQ&show_owner=true&description_lines_count=1)](https://github.com/lmliheng/DoQ)
-
-[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=lmliheng&repo=law-ai-app&show_owner=true&description_lines_count=1)](https://github.com/lmliheng/law-ai-app)&emsp;[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=lmliheng&repo=code&show_owner=true&description_lines_count=1)](https://github.com/lmliheng/learn)
- -->
-
+<a href="mailto:0110230306@csu.edu.cn"><img src="https://img.shields.io/badge/-0110230306%40csu.edu.cn-EA4335?style=flat-square&logo=gmail&logoColor=white" alt="邮件" /></a> <a href="https://www.npmjs.com/~lmliheng"><img src="https://img.shields.io/badge/npm-CB3837?style=flat-square&logo=npm&logoColor=white" alt="npm" /></a> <a href="https://leetcode.cn/u/festive-keplerug8/"><img src="https://img.shields.io/badge/-LeetCode-FFA116?style=flat-square&logo=LeetCode&logoColor=black" alt="LeetCode" /></a> <a href="https://github.com/lmliheng"><img src="https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white" alt="GitHub" /></a> <a href="https://paypal.me/lmliheng"><img src="https://img.shields.io/badge/PayPal-003087?style=flat-square&logo=paypal&logoColor=white" alt="PayPal" /></a>
 
 </div>
+
+#### 最近在做什么
+
+| 项目 | 最近一次提交 | 更新 |
+| :-- | :-- | :-- |
+| ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white) **[AgentCode](https://github.com/lmliheng/AgentCode)** | `refactor: monorepo` | 今天 |
+| ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) **[llm](https://github.com/lmliheng/llm)** | `feat： 引用本地模型` | 今天 |
+| ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white) **[algorithm](https://github.com/lmliheng/algorithm)** | `ci: 启动deploy.yml` | 今天 |
+
+<sub>过去 7 天：3 个仓库 · 28 次提交</sub>
+
+#### 技术栈
+
+<img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript" /> <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python" /> <img src="https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white" alt="Java" /> <img src="https://img.shields.io/badge/Go-00ADD8?style=flat-square&logo=go&logoColor=white" alt="Go" /> <img src="https://img.shields.io/badge/Vue.js-4FC08D?style=flat-square&logo=vuedotjs&logoColor=white" alt="Vue.js" /> <img src="https://img.shields.io/badge/Node.js-5FA04E?style=flat-square&logo=nodedotjs&logoColor=white" alt="Node.js" /> <img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white" alt="Docker" /> <img src="https://img.shields.io/badge/LangChain-1C3C3C?style=flat-square&logo=langchain&logoColor=white" alt="LangChain" /> <img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white" alt="PyTorch" /> <img src="https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white" alt="MySQL" /> <img src="https://img.shields.io/badge/Redis-FF4438?style=flat-square&logo=redis&logoColor=white" alt="Redis" /> <img src="https://img.shields.io/badge/Milvus-00B0F0?style=flat-square&logo=milvus&logoColor=white" alt="Milvus" />
+
+<sub>最后更新：2026-09-28 03:23（UTC+8）· 由 [scripts/update_readme.py](scripts/update_readme.py) 自动生成</sub>
