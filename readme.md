@@ -4,7 +4,7 @@
 
 <img src="assets/banner.svg" alt="liheng" width="100%" />
 
-<a href="mailto:0110230306@csu.edu.cn"><img src="https://img.shields.io/badge/-0110230306%40csu.edu.cn-EA4335?style=flat-square&logo=gmail&logoColor=white" alt="邮件" /></a> <a href="https://www.npmjs.com/~lmliheng"><img src="https://img.shields.io/badge/npm-CB3837?style=flat-square&logo=npm&logoColor=white" alt="npm" /></a> <a href="https://leetcode.cn/u/festive-keplerug8/"><img src="https://img.shields.io/badge/-LeetCode-FFA116?style=flat-square&logo=LeetCode&logoColor=black" alt="LeetCode" /></a> <a href="https://github.com/lmliheng"><img src="https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white" alt="GitHub" /></a> <a href="https://paypal.me/lmliheng"><img src="https://img.shields.io/badge/PayPal-003087?style=flat-square&logo=paypal&logoColor=white" alt="PayPal" /></a>
+<a href="mailto:0110230306@csu.edu.cn"><img src="https://img.shields.io/badge/-0110230306%40csu.edu.cn-EA4335?style=flat-square&logo=gmail&logoColor=white" alt="邮件" /></a> <a href="https://www.npmjs.com/~lmliheng"><img src="https://img.shields.io/badge/npm-CB3837?style=flat-square&logo=npm&logoColor=white" alt="npm" /></a> <a href="https://leetcode.cn/u/festive-keplerug8/"><img src="https://img.shields.io/badge/-LeetCode-FFA116?style=flat-square&logo=LeetCode&logoColor=black" alt="LeetCode" /></a>  <a href="https://paypal.me/lmliheng"><img src="https://img.shields.io/badge/PayPal-003087?style=flat-square&logo=paypal&logoColor=white" alt="PayPal" /></a>
 
 </div>
 
