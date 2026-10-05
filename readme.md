@@ -4,7 +4,7 @@
 
 <img alt="访问量" src="https://views.whatilearened.today/views/github/lmliheng/lmliheng.svg" />
 
-<img width="26%" align="right" alt="liheng" src="photo.jpg" />
+<img width="20%" align="right" alt="liheng" src="photo.jpg" />
 
 **关于我**
 
@@ -50,4 +50,4 @@
   <img alt="3D 贡献图" src="https://raw.githubusercontent.com/lmliheng/lmliheng/output-3d-contrib/day.svg" />
 </picture>
 
-<sub>最后更新：2026-10-05 13:38（UTC+8）· 由 [scripts/update_readme.py](scripts/update_readme.py) 自动生成 · 3D 贡献图由 [.github/workflows/profile-3d-contrib.yml](.github/workflows/profile-3d-contrib.yml) 每日生成</sub>
+<sub>最后更新：2026-10-05 13:40（UTC+8）· 由 [scripts/update_readme.py](scripts/update_readme.py) 自动生成 · 3D 贡献图由 [.github/workflows/profile-3d-contrib.yml](.github/workflows/profile-3d-contrib.yml) 每日生成</sub>

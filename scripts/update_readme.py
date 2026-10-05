@@ -57,7 +57,7 @@ LOGO_WALL = [
 
 # 「关于我」那一段的右浮动头像（仓库根目录的 photo.jpg）。
 AVATAR = "photo.jpg"
-AVATAR_WIDTH = "26%"
+AVATAR_WIDTH = "20%"
 
 # 访问量徽章（第三方服务，与 Furinar 主页同款）。
 VIEWS_BADGE = "https://views.whatilearened.today/views/github/%s/%s.svg" % (USER, USER)
