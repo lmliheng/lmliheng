@@ -1,0 +1,38 @@
+name: 生成 3D 贡献图
+
+on:
+  schedule:
+    # 每天 19:00 UTC = 次日 03:00（北京时间）
+    - cron: "0 19 * * *"
+  workflow_dispatch: # 也可以在 Actions 页面手动点一次
+
+permissions:
+  contents: write
+
+concurrency:
+  group: profile-3d-contrib
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    name: generate-github-profile-3d-contrib
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: yoshi389111/github-profile-3d-contrib@0.7.1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          USERNAME: ${{ github.repository_owner }}
+          SETTING_JSON: conf/github-profile-3d-contrib.json
+
+      # 生成的 SVG 不进 main，单独推到 output-3d-contrib 分支；
+      # readme.md 里按分支原始地址引用：
+      # raw.githubusercontent.com/<user>/<user>/output-3d-contrib/day.svg
+      - name: 推送到 output-3d-contrib 分支
+        uses: crazy-max/ghaction-github-pages@v3.1.0
+        with:
+          target_branch: output-3d-contrib
+          build_dir: profile-3d-contrib
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

@@ -4,7 +4,9 @@
 生成 GitHub 主页 readme.md（lmliheng/lmliheng）。
 
 · 所有版式与文案都在本文件里，改版请改这里（直接手改 readme.md 会在下次运行被覆盖）。
-· 数据全部来自 GitHub REST API，不依赖第三方动态卡片服务，外部图片只有 shields.io 徽章和 streak 卡片。
+· 数据全部来自 GitHub REST API，不依赖第三方动态卡片服务；外部图片只有 shields.io 徽章、
+  vectorlogo.zone / simpleicons 图标、访问量徽章，以及 output-3d-contrib 分支里的 3D 贡献图
+  （由 .github/workflows/profile-3d-contrib.yml 每天生成）。
 · 页脚的「最后更新」时间每次都会刷新，所以正常情况下每天恰好产生一次提交。
 
 用法:
@@ -33,20 +35,35 @@ EMAIL = "0110230306@csu.edu.cn"
 
 # ---------------------------------------------------------------- 版式配置 ----
 
-STACK = [
-    ("TypeScript", "3178C6", "typescript", "white"),
-    ("Python", "3776AB", "python", "white"),
-    ("Java", "ED8B00", "openjdk", "white"),
-    ("Vue.js", "4FC08D", "vuedotjs", "white"),
-    ("Go", "00ADD8", "go", "white"),
-    ("Node.js", "5FA04E", "nodedotjs", "white"),
-    ("Docker", "2496ED", "docker", "white"),
-    ("LangChain", "1C3C3C", "langchain", "white"),
-    ("PyTorch", "EE4C2C", "pytorch", "white"),
-    ("MySQL", "4479A1", "mysql", "white"),
-    ("Redis", "FF4438", "redis", "white"),
-    ("Milvus", "00B0F0", "milvus", "white"),
+# 「技术栈」的图标墙，每行 3 个（<code><img width=...> 版式）。
+# 优先用 vectorlogo.zone 的 -ar21 彩色字标；它没有的品牌（当前是 LangChain、Milvus）用
+# cdn.simpleicons.org 的同色方图标补齐，宽度小一半并排在最后一行，免得那行长短不齐。
+VZ = "https://www.vectorlogo.zone/logos/%s-ar21.svg"
+SI = "https://cdn.simpleicons.org/%s"
+LOGO_WALL = [
+    ("TypeScript", VZ % "typescriptlang/typescriptlang", "10%"),
+    ("Python", VZ % "python/python", "10%"),
+    ("Java", VZ % "java/java", "10%"),
+    ("Vue.js", VZ % "vuejs/vuejs", "10%"),
+    ("Go", VZ % "golang/golang", "10%"),
+    ("Node.js", VZ % "nodejs/nodejs", "10%"),
+    ("Docker", VZ % "docker/docker", "10%"),
+    ("PyTorch", VZ % "pytorch/pytorch", "10%"),
+    ("MySQL", VZ % "mysql/mysql", "10%"),
+    ("Redis", VZ % "redis/redis", "10%"),
+    ("LangChain", SI % "langchain", "5%"),
+    ("Milvus", SI % "milvus", "5%"),
 ]
+
+# 「关于我」那一段的右浮动头像（仓库根目录的 photo.jpg）。
+AVATAR = "photo.jpg"
+AVATAR_WIDTH = "26%"
+
+# 访问量徽章（第三方服务，与 Furinar 主页同款）。
+VIEWS_BADGE = "https://views.whatilearened.today/views/github/%s/%s.svg" % (USER, USER)
+
+# 3D 贡献图由 .github/workflows/profile-3d-contrib.yml 推到 output-3d-contrib 分支。
+CONTRIB_BASE = "https://raw.githubusercontent.com/%s/%s/output-3d-contrib" % (USER, USER)
 
 # (名称, 链接, 徽章图片)
 CONTACT = [
@@ -200,6 +217,22 @@ def render():
     L = []
     a = L.append
     a("<!-- 该文件由 scripts/update_readme.py 自动生成，请勿直接编辑；改版请改脚本。 -->")
+    a("")
+    a("## Hi, I'm liheng 👋")
+    a("")
+    a('<img alt="访问量" src="%s" />' % VIEWS_BADGE)
+    a("")
+    a('<img width="%s" align="right" alt="liheng" src="%s" />' % (AVATAR_WIDTH, AVATAR))
+    a("")
+    a("**关于我**")
+    a("")
+    a("- 🎓 中南大学 · 长沙")
+    a("- 🔭 正在做：Agent 自我进化、Vue 生态工具、LLM 微调与部署")
+    a("- 💬 有问题随时来问，乐意帮忙；")
+    a("- 📫 找我：[%s](mailto:%s)" % (EMAIL, EMAIL))
+    a("")
+    a('<br clear="all" />')
+    a("")
     a("#### 最近在做什么")
     a("")
     a("| 项目 | 最近一次提交 | 更新 |")
@@ -212,9 +245,22 @@ def render():
         a("")
     a("#### 技术栈")
     a("")
-    a(" ".join('<img src="%s" alt="%s" />' % (badge(*it, "flat-square"), it[0]) for it in STACK))
+    a("<p>")
+    for i, (name, url, width) in enumerate(LOGO_WALL):
+        a('  <code><img width="%s" alt="%s" src="%s"></code>%s'
+          % (width, name, url, "<br />" if (i + 1) % 3 == 0 and i + 1 < len(LOGO_WALL) else ""))
+    a("</p>")
     a("")
-    a("<sub>最后更新：%s（UTC+8）· 由 [scripts/update_readme.py](scripts/update_readme.py) 自动生成</sub>"
+    a("#### 贡献图")
+    a("")
+    a("<picture>")
+    a('  <source media="(prefers-color-scheme: dark)" srcset="%s/night.svg" />' % CONTRIB_BASE)
+    a('  <source media="(prefers-color-scheme: light)" srcset="%s/day.svg" />' % CONTRIB_BASE)
+    a('  <img alt="3D 贡献图" src="%s/day.svg" />' % CONTRIB_BASE)
+    a("</picture>")
+    a("")
+    a("<sub>最后更新：%s（UTC+8）· 由 [scripts/update_readme.py](scripts/update_readme.py) 自动生成 · "
+      "3D 贡献图由 [.github/workflows/profile-3d-contrib.yml](.github/workflows/profile-3d-contrib.yml) 每日生成</sub>"
       % now.astimezone(TZ).strftime("%Y-%m-%d %H:%M"))
     a("")
     return "\n".join(L)
