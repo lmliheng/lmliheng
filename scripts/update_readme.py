@@ -4,7 +4,7 @@
 生成 GitHub 主页 readme.md（lmliheng/lmliheng）。
 
 · 所有版式与文案都在本文件里，改版请改这里（直接手改 readme.md 会在下次运行被覆盖）。
-· 数据全部来自 GitHub REST API，不依赖第三方动态卡片服务；外部图片只有 shields.io 徽章、访问量徽章，
+· 数据全部来自 GitHub REST API，不依赖第三方动态卡片服务；外部图片只有 shields.io 徽章，
   以及 output-3d-contrib 分支里的 3D 贡献图（由 .github/workflows/profile-3d-contrib.yml 每天生成）。
 · 页脚的「最后更新」时间每次都会刷新，所以正常情况下每天恰好产生一次提交。
 
@@ -33,9 +33,6 @@ SELF_REPO = USER + "/" + USER
 EMAIL = "0110230306@csu.edu.cn"
 
 # ---------------------------------------------------------------- 版式配置 ----
-
-# 访问量徽章（第三方服务，与 Furinar 主页同款）。
-VIEWS_BADGE = "https://views.whatilearened.today/views/github/%s/%s.svg" % (USER, USER)
 
 # 3D 贡献图由 .github/workflows/profile-3d-contrib.yml 推到 output-3d-contrib 分支。
 CONTRIB_BASE = "https://raw.githubusercontent.com/%s/%s/output-3d-contrib" % (USER, USER)
@@ -192,10 +189,6 @@ def render():
     L = []
     a = L.append
     a("<!-- 该文件由 scripts/update_readme.py 自动生成，请勿直接编辑；改版请改脚本。 -->")
-    a("")
-    a("## Hi, I'm liheng 👋")
-    a("")
-    a('<img alt="访问量" src="%s" />' % VIEWS_BADGE)
     a("")
     a("#### 最近在做什么")
     a("")
