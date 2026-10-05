@@ -200,12 +200,6 @@ def render():
     L = []
     a = L.append
     a("<!-- 该文件由 scripts/update_readme.py 自动生成，请勿直接编辑；改版请改脚本。 -->")
-    a("")
-    a('<div align="center">')
-    a(" ".join('<a href="%s"><img src="%s" alt="%s" /></a>' % (u, b, n) for n, u, b in CONTACT))
-    a("")
-    a("</div>")
-    a("")
     a("#### 最近在做什么")
     a("")
     a("| 项目 | 最近一次提交 | 更新 |")
