@@ -37,8 +37,8 @@ STACK = [
     ("TypeScript", "3178C6", "typescript", "white"),
     ("Python", "3776AB", "python", "white"),
     ("Java", "ED8B00", "openjdk", "white"),
-    ("Go", "00ADD8", "go", "white"),
     ("Vue.js", "4FC08D", "vuedotjs", "white"),
+    ("Go", "00ADD8", "go", "white"),
     ("Node.js", "5FA04E", "nodedotjs", "white"),
     ("Docker", "2496ED", "docker", "white"),
     ("LangChain", "1C3C3C", "langchain", "white"),
@@ -53,7 +53,6 @@ CONTACT = [
     ("邮件", "mailto:" + EMAIL, "https://img.shields.io/badge/-%s-EA4335?style=flat-square&logo=gmail&logoColor=white" % urllib.parse.quote(EMAIL)),
     ("npm", "https://www.npmjs.com/~" + USER, "https://img.shields.io/badge/npm-CB3837?style=flat-square&logo=npm&logoColor=white"),
     ("LeetCode", "https://leetcode.cn/u/festive-keplerug8/", "https://img.shields.io/badge/-LeetCode-FFA116?style=flat-square&logo=LeetCode&logoColor=black"),
-    ("GitHub", "https://github.com/" + USER, "https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white"),
     ("PayPal", "https://paypal.me/" + USER, "https://img.shields.io/badge/PayPal-003087?style=flat-square&logo=paypal&logoColor=white"),
 ]
 
@@ -203,9 +202,6 @@ def render():
     a("<!-- 该文件由 scripts/update_readme.py 自动生成，请勿直接编辑；改版请改脚本。 -->")
     a("")
     a('<div align="center">')
-    a("")
-    a('<img src="assets/banner.svg" alt="liheng" width="100%" />')
-    a("")
     a(" ".join('<a href="%s"><img src="%s" alt="%s" /></a>' % (u, b, n) for n, u, b in CONTACT))
     a("")
     a("</div>")
