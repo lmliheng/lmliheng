@@ -4,11 +4,11 @@
 
 | 项目 | 最近一次提交 | 更新 |
 | :-- | :-- | :-- |
-| ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white) **[Adelie](https://github.com/lmliheng/Adelie)** | `fix(ci): 官网快照不进格式检查，门禁不再红在它上面` | 今天 |
-| ![Jupyter Notebook](https://img.shields.io/badge/Jupyter%20Notebook-6e7681?style=flat-square&logo=github&logoColor=white) **[algorithm](https://github.com/lmliheng/algorithm)** | `Merge branch 'master' of github.com:lmliheng/algorithm` | 今天 |
-| ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) **[llm_kernel](https://github.com/lmliheng/llm_kernel)** | `ci: realase触发` | 3 天前 |
+| ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white) **[Adelie](https://github.com/lmliheng/Adelie)** | `docs(progress): 第七十八轮 —— 浏览器 e2e 整 77 条全绿（7.2）` | 今天 |
+| ![Jupyter Notebook](https://img.shields.io/badge/Jupyter%20Notebook-6e7681?style=flat-square&logo=github&logoColor=white) **[algorithm](https://github.com/lmliheng/algorithm)** | `feat: 最小路径` | 今天 |
+| ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) **[llm_kernel](https://github.com/lmliheng/llm_kernel)** | `ci: realase触发` | 4 天前 |
 
-<sub>过去 7 天：3 个仓库 · 118 次提交</sub>
+<sub>过去 7 天：3 个仓库 · 116 次提交</sub>
 
 #### 贡献图
 
@@ -18,4 +18,4 @@
   <img alt="3D 贡献图" src="https://raw.githubusercontent.com/lmliheng/lmliheng/output-3d-contrib/day.svg" />
 </picture>
 
-<sub>最后更新：2026-10-17 08:05（UTC+8）· 由 [scripts/update_readme.py](scripts/update_readme.py) 自动生成 · 3D 贡献图由 [.github/workflows/profile-3d-contrib.yml](.github/workflows/profile-3d-contrib.yml) 每日生成</sub>
+<sub>最后更新：2026-10-18 07:41（UTC+8）· 由 [scripts/update_readme.py](scripts/update_readme.py) 自动生成 · 3D 贡献图由 [.github/workflows/profile-3d-contrib.yml](.github/workflows/profile-3d-contrib.yml) 每日生成</sub>
