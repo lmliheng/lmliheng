@@ -4,11 +4,11 @@
 
 | 项目 | 最近一次提交 | 更新 |
 | :-- | :-- | :-- |
-| ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white) **[Adelie](https://github.com/lmliheng/Adelie)** | `docs(progress): 记下第九十轮的 7.13` | 今天 |
-| ![Jupyter Notebook](https://img.shields.io/badge/Jupyter%20Notebook-6e7681?style=flat-square&logo=github&logoColor=white) **[algorithm](https://github.com/lmliheng/algorithm)** | `Merge branch 'master' of github.com:lmliheng/algorithm` | 今天 |
-| ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) **[llm_kernel](https://github.com/lmliheng/llm_kernel)** | `ci: realase触发` | 6 天前 |
+| ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white) **[Adelie](https://github.com/lmliheng/Adelie)** | `docs(progress): 记下第九十七轮推送后的 CI（22 个作业全绿）` | 今天 |
+| ![Jupyter Notebook](https://img.shields.io/badge/Jupyter%20Notebook-6e7681?style=flat-square&logo=github&logoColor=white) **[algorithm](https://github.com/lmliheng/algorithm)** | `Update LOC graph [skip ci]` | 今天 |
+| ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) **[llm_kernel](https://github.com/lmliheng/llm_kernel)** | `ci: realase触发` | 7 天前 |
 
-<sub>过去 7 天：3 个仓库 · 114 次提交</sub>
+<sub>过去 7 天：2 个仓库 · 109 次提交</sub>
 
 #### 贡献图
 
@@ -18,4 +18,4 @@
   <img alt="3D 贡献图" src="https://raw.githubusercontent.com/lmliheng/lmliheng/output-3d-contrib/day.svg" />
 </picture>
 
-<sub>最后更新：2026-10-20 08:51（UTC+8）· 由 [scripts/update_readme.py](scripts/update_readme.py) 自动生成 · 3D 贡献图由 [.github/workflows/profile-3d-contrib.yml](.github/workflows/profile-3d-contrib.yml) 每日生成</sub>
+<sub>最后更新：2026-10-21 08:16（UTC+8）· 由 [scripts/update_readme.py](scripts/update_readme.py) 自动生成 · 3D 贡献图由 [.github/workflows/profile-3d-contrib.yml](.github/workflows/profile-3d-contrib.yml) 每日生成</sub>
