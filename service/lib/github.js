@@ -1,7 +1,8 @@
 /**
- * 一次 GraphQL 请求取齐两张卡片要用的数据：
+ * 一次 GraphQL 请求取齐卡片要用的数据：
  *   · 按最近推送排序的公开仓库（前 8 个）+ 各自默认分支的最新提交
- *   · 过去一年的贡献日历（按周分组，每天的次数）
+ *   · 过去一年的贡献日历（按周分组，每天的次数）与各类贡献计数
+ *   · 全部公开仓库的星标 / fork 合计（最多 100 个仓库，够用）
  * 进程内缓存 5 分钟（配合 CDN 的 s-maxage），免得每次刷新都把配额打光。
  */
 
@@ -14,7 +15,7 @@ query profile($login: String!, $from: DateTime!, $to: DateTime!, $since: GitTime
   user(login: $login) {
     login
     name
-    repositories(
+    recent: repositories(
       first: 8
       privacy: PUBLIC
       ownerAffiliations: OWNER
@@ -31,15 +32,22 @@ query profile($login: String!, $from: DateTime!, $to: DateTime!, $since: GitTime
           target {
             ... on Commit {
               history(first: 1) { nodes { messageHeadline committedDate } }
-              recent: history(first: 1, since: $since) { nodes { committedDate } }
+              fresh: history(first: 1, since: $since) { nodes { committedDate } }
             }
           }
         }
       }
     }
+    all: repositories(first: 100, privacy: PUBLIC, ownerAffiliations: OWNER, isFork: false) {
+      totalCount
+      nodes { stargazerCount forkCount }
+    }
     contributionsCollection(from: $from, to: $to) {
       totalCommitContributions
-      restrictedContributionsCount
+      totalPullRequestContributions
+      totalIssueContributions
+      totalPullRequestReviewContributions
+      totalRepositoriesWithContributedCommits
       contributionCalendar {
         totalContributions
         weeks { contributionDays { date contributionCount } }
@@ -50,11 +58,10 @@ query profile($login: String!, $from: DateTime!, $to: DateTime!, $since: GitTime
 
 const DAY = 24 * 60 * 60 * 1000;
 
-/** GitHub 的 contributionsCollection 最多一年，这里取最近 53 周对齐到周日 */
+/** GitHub 的 contributionsCollection 最多一年，这里取最近 53 周并对齐到周日 */
 const range = (now) => {
   const to = new Date(now);
   const from = new Date(to.getTime() - 364 * DAY);
-  // 退到最近的周日，让日历保证是整周
   from.setUTCDate(from.getUTCDate() - from.getUTCDay());
   return { from: from.toISOString(), to: to.toISOString() };
 };
@@ -82,28 +89,41 @@ async function fetchProfile(login, token) {
   const user = body.data && body.data.user;
   if (!user) throw new Error('用户不存在：' + login);
 
-  const repos = (user.repositories.nodes || []).map((r) => {
+  const repos = (user.recent.nodes || []).map((r) => {
     const target = (r.defaultBranchRef && r.defaultBranchRef.target) || null;
     const head = target && target.history && target.history.nodes && target.history.nodes[0];
-    const recent = target && target.recent && target.recent.nodes;
+    const fresh = target && target.fresh && target.fresh.nodes;
     return {
       name: r.name,
       url: r.url,
       pushedAt: r.pushedAt,
       archived: r.isArchived,
-      active: !!(recent && recent.length),
+      active: !!(fresh && fresh.length),
       language: r.primaryLanguage,
       commit: head ? { title: head.messageHeadline, date: head.committedDate } : null,
     };
   });
 
-  const calendar = user.contributionsCollection.contributionCalendar;
+  const all = user.all.nodes || [];
+  const cc = user.contributionsCollection;
+  const calendar = cc.contributionCalendar;
+
   return {
     login: user.login,
     name: user.name,
     fetchedAt: now,
     repos,
-    commitsYear: user.contributionsCollection.totalCommitContributions,
+    stars: all.reduce((s, r) => s + (r.stargazerCount || 0), 0),
+    forks: all.reduce((s, r) => s + (r.forkCount || 0), 0),
+    repoCount: user.all.totalCount,
+    stats: {
+      contributions: calendar.totalContributions,
+      commits: cc.totalCommitContributions,
+      pullRequests: cc.totalPullRequestContributions,
+      issues: cc.totalIssueContributions,
+      reviews: cc.totalPullRequestReviewContributions,
+      activeRepos: cc.totalRepositoriesWithContributedCommits,
+    },
     contributions: {
       total: calendar.totalContributions,
       weeks: calendar.weeks.map((w) => w.contributionDays.map((d) => ({ date: d.date, count: d.contributionCount }))),

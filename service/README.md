@@ -5,24 +5,26 @@
 | 卡片 | 原来 | 现在 |
 | --- | --- | --- |
 | 最近在做什么 | `scripts/update_readme.py` 每天跑一次 Actions，把 markdown 表格重新生成一遍（内容最旧能差一天） | `/api/activity` 请求时现算 |
-| 贡献图 | `yoshi389111/github-profile-3d-contrib` 生成 SVG 推到 `output-3d-contrib` 分支 | `/api/contrib` 请求时现画 3D 等距柱状图 |
+| 贡献图 | `yoshi389111/github-profile-3d-contrib` 生成 SVG 推到 `output-3d-contrib` 分支 | `/api/contrib` 请求时现画 |
 
 ## 接口
 
 | 接口 | 说明 |
 | --- | --- |
 | `GET /api/activity?user=lmliheng` | 最近活跃的 3 个仓库、各自默认分支最新提交、相对时间，右上角是过去 7 天的汇总 |
-| `GET /api/contrib?user=lmliheng` | 过去 53 周 × 7 天的 3D 贡献图，左侧是总数，右下是色阶图例 |
+| `GET /api/contrib?user=lmliheng` | 贡献热力格（53 周 × 7 天）+ 底部数字面板：**贡献 / 提交 / PR / 星标 / 仓库** |
+| `GET /api/contrib?user=lmliheng&style=3d` | 同一份数据的 3D 等距柱状图版本（旧的立体样式，留着备用） |
 
 两个接口都返回 `image/svg+xml`：
 
 - 深浅色由 SVG 内部的 `prefers-color-scheme` 切换，一个 URL 就自适应；也可以用 `?theme=light|dark` 强制。
 - 缓存 `max-age=60, s-maxage=300, stale-while-revalidate=86400`，再叠加进程内 5 分钟缓存，所以刷新很快，也不会打爆 GraphQL 配额。
-- 载入时有 CSS 动画：卡片逐行滑入，贡献图按周次逐列升起。动效在 `<img>` 里也会播（Chromium/Firefox/Safari）。
+- 载入时有 CSS 动画：活跃卡逐行滑入，贡献图按周次一列列冒出来。动效在 `<img>` 里也会播（Chromium/Firefox/Safari）。
+- 数字面板的口径写在卡片底部：贡献 = 提交 + PR + issue + 评审（GitHub 个人页的口径），星标是全部公开仓库 `stargazerCount` 之和。
 
 ## 数据来源
 
-一次 GraphQL 请求取齐：仓库列表（按最近推送排序）、每个仓库默认分支的最新提交、过去一年贡献日历。
+一次 GraphQL 请求取齐：仓库列表（按最近推送排序）、每个仓库默认分支的最新提交、过去一年贡献日历与各类贡献计数、全部公开仓库的星标 / fork 合计。
 
 需要环境变量 `GH_TOKEN`（只读就够的 PAT）。没有 token 时接口会返回一张说明文字的小卡片，而不是让 README 出现碎图标。
 
@@ -38,7 +40,7 @@ VERCEL_TOKEN=xxx VERCEL_PROJECT=profile-cards node scripts/deploy.js
 ## 本地预览
 
 ```bash
-GH_TOKEN=xxx node dev/render.js    # 把四种组合落到 dev/out/*.svg
+GH_TOKEN=xxx node dev/render.js    # 把几种组合落到 dev/out/*.svg
 ```
 
 然后把 `dev/out/*.svg` 拖进浏览器，或 `python3 -m http.server` 起一个静态服务看。
