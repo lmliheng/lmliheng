@@ -1,0 +1,51 @@
+name: 部署 profile-cards 服务
+
+# service/ 一改就重新部署；部署后 curl 两个接口，确认返回的是 SVG 而不是错误卡片。
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'service/**'
+      - '.github/workflows/deploy-service.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: deploy-service
+  cancel-in-progress: false
+
+env:
+  VERCEL_PROJECT: profile-cards
+  BASE_URL: https://profile-cards-hazel-gamma.vercel.app
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v6
+        with:
+          node-version: 24
+
+      - name: 部署到 Vercel
+        env:
+          VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
+        run: node service/scripts/deploy.js
+
+      - name: 校验线上接口
+        run: |
+          set -euo pipefail
+          for path in "/api/activity?user=lmliheng" "/api/contrib?user=lmliheng"; do
+            out="/tmp/card.svg"
+            code=$(curl -sS -o "$out" -w '%{http_code}' --retry 5 --retry-delay 4 --retry-all-errors "$BASE_URL$path")
+            type=$(curl -sSI --retry 3 --retry-all-errors "$BASE_URL$path" | tr -d '\r' | awk -F': ' 'tolower($1)=="content-type"{print $2}')
+            echo "$path -> HTTP $code · $type · $(wc -c < "$out") bytes"
+            if [ "$code" != "200" ]; then echo "接口不是 200"; exit 1; fi
+            if ! grep -q '<svg' "$out"; then echo "返回的不是 SVG"; exit 1; fi
+            if grep -q '暂时取不到' "$out"; then echo "接口回了错误卡片"; cat "$out"; exit 1; fi
+          done
+          curl -sSf --retry 3 --retry-all-errors -o /dev/null "$BASE_URL/"
+          echo "页面与两个接口都正常"

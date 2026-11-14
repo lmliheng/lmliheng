@@ -1,0 +1,9 @@
+{
+  "name": "lmliheng-profile-service",
+  "version": "1.0.0",
+  "private": true,
+  "description": "主页 README 用的两张动态卡片：最近活跃 + 3D 贡献图，实时渲染成 SVG",
+  "engines": {
+    "node": ">=18"
+  }
+}
